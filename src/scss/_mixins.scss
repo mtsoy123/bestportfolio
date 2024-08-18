@@ -1,0 +1,22 @@
+@mixin font(
+    $font-family,
+    $font-style,
+    $font-weight,
+    $font-size,
+    $line-height,
+    $color
+) {
+    font-family: $font-family, "Arial", "Helvetica", sans-serif;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin button($color, $border) {
+    background-color: $color;
+    border: 5px solid $border;
+    border-radius: 15px;
+    @include font("Syne", normal, 400, 32px, 46px, $border);
+}
