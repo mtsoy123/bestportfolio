@@ -85,9 +85,38 @@
 
     &__paragraph {
         margin: 0;
+        display: inline;
     }
-    &__paragraph--main {
+
+    &__paragraph-wrapper {
+        display: inline;
+        justify-content: start;
+    }
+
+    &__paragraph-type-main {
         @include font("Syne", normal, 400, 67px, 132.5%, $color-light);
+    }
+
+    &__paragraph-type-code {
+        @include font(
+            "JetBrains Mono",
+            normal,
+            800,
+            67px,
+            132.5%,
+            $color-light
+        );
+    }
+
+    &__paragraph-type-design {
+        @include font(
+            "JetBrains Mono",
+            italic,
+            800,
+            67px,
+            132.5%,
+            $color-light
+        );
     }
 
     &__button {
