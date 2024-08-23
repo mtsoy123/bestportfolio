@@ -44,6 +44,10 @@
         }
     }
 
+    &_type_adbro {
+        background-color: $color-adbro;
+    }
+
     &_type_naumen {
         background-color: $color-naumen;
     }
@@ -152,6 +156,10 @@
 
     &__button_type_naumen {
         @include button($color-naumen, $color-light);
+    }
+
+    &__button_type_adbro {
+        @include button($color-adbro, $color-light);
     }
 
     &__button_type_crp {
@@ -301,6 +309,10 @@
         }
 
         &__button_type_naumen {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        &__button_type_adbro {
             font-size: 24px;
             line-height: 35px;
         }
