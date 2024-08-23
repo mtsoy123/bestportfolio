@@ -209,6 +209,15 @@
         margin-bottom: 24px;
     }
 
+    &__experience-point {
+        // margin: 0;
+    }
+    &__experience-point:before {
+        content: "•";
+        @include font("Syne", normal, 400, 44px, 145%, $color-dark);
+        margin: 0;
+    }
+
     &__experience-wrapper {
         display: flex;
         width: 100%;
